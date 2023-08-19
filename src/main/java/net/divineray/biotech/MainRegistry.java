@@ -20,19 +20,13 @@ import net.minecraft.creativetab.CreativeTabs;
 public class MainRegistry {
     public static final Logger LOG = LogManager.getLogger(Tags.MODID);
 
+    public static MainRegistry instance;
     @SidedProxy(clientSide = "net.divineray.biotech.ClientProxy", serverSide = "net.divineray.biotech.CommonProxy")
     public static CommonProxy proxy;
 
 
     //Creative Tabs
     public static CreativeTabs testTab = new TestTab(CreativeTabs.getNextID(), "tabTest");
-
-
-
-
-
-
-
 
     @Mod.EventHandler
     // preInit "Run before anything else. Read your config, create blocks, items, etc, and register them with the

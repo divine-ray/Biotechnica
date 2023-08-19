@@ -1,5 +1,7 @@
 package net.divineray.biotech.items;
 
+import net.divineray.biotech.MainRegistry;
+
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.divineray.biotech.MainRegistry;
 import net.minecraft.client.main.Main;
@@ -28,16 +30,16 @@ public class ItemRegistry {
         initializeItem();
         registerItem();
     }
-        public static Item item_dummy;
+        public static Item itemDummy;
 
 
         public static void initializeItem()
         {
-            item_dummy = new Item().setUnlocalizedName("item_dummy").setCreativeTab(MainRegistry.testTab);
+            itemDummy = new Item().setUnlocalizedName("itemDummy").setCreativeTab(MainRegistry.testTab);
         }
 
         private static void registerItem(){
-            GameRegistry.registerItem(item_dummy, item_dummy.getUnlocalizedName());
+            GameRegistry.registerItem(itemDummy, itemDummy.getUnlocalizedName());
         }
 
 }
