@@ -1,5 +1,8 @@
 package net.divineray.biotech;
 
+import net.divineray.biotech.blocks.BlockRegistry;
+import net.divineray.biotech.creativetabs.TestTab;
+import net.divineray.biotech.items.ItemRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -10,13 +13,26 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 
-@Mod(modid = Tags.MODID, version = Tags.VERSION, name = Tags.MODNAME, acceptedMinecraftVersions = "[1.7.10]")
-public class MyMod {
+import net.minecraft.creativetab.CreativeTabs;
 
+
+@Mod(modid = Tags.MODID, version = Tags.VERSION, name = Tags.MODNAME, acceptedMinecraftVersions = "[1.7.10]")
+public class MainRegistry {
     public static final Logger LOG = LogManager.getLogger(Tags.MODID);
 
     @SidedProxy(clientSide = "net.divineray.biotech.ClientProxy", serverSide = "net.divineray.biotech.CommonProxy")
     public static CommonProxy proxy;
+
+
+    //Creative Tabs
+    public static CreativeTabs testTab = new TestTab(CreativeTabs.getNextID(), "tabTest");
+
+
+
+
+
+
+
 
     @Mod.EventHandler
     // preInit "Run before anything else. Read your config, create blocks, items, etc, and register them with the
@@ -24,6 +40,9 @@ public class MyMod {
     public void preInit(FMLPreInitializationEvent event) {
         proxy.preInit(event);
     }
+
+    //BlockRegistry.mainRegistry();
+    ItemRegistry.mainRegistry();
 
     @Mod.EventHandler
     // load "Do your mod setup. Build whatever data structures you care about. Register recipes." (Remove if not needed)
