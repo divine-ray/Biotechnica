@@ -1,4 +1,5 @@
-package net.divineray.biotech.creativetabs;
+package net.divineray.biotech.creativeTabs;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -13,5 +14,4 @@ public class TestTab extends CreativeTabs {
     public Item getTabIconItem() {
         return Items.diamond;
     }
-
 }
