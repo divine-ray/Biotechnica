@@ -1,8 +1,8 @@
 package net.divineray.biotech;
 
-public class ClientProxy extends CommonProxy {
+public class ClientProxy extends commonProxy {
 
-    // Override CommonProxy methods here, if you want a different behaviour on the client (e.g. registering renders).
+    // Override commonProxy methods here, if you want a different behaviour on the client (e.g. registering renders).
     // Don't forget to call the super methods as well.
 
 }

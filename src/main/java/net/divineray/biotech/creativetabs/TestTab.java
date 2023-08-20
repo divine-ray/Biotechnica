@@ -1,4 +1,4 @@
-package net.divineray.biotech.creativeTabs;
+package net.divineray.biotech.creativetabs;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;

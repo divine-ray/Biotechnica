@@ -1,20 +1,18 @@
 package net.divineray.biotech.Items;
 
-import java.util.List;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumChatFormatting;
 
-public class itemDummy extends Item {
+import java.util.List;
 
-    public itemDummy() {}
 
-    @SuppressWarnings("rawtypes")
+public class itemGreenBacterium extends Item {
+    public itemGreenBacterium(){}
     @Override
     public void addInformation(ItemStack itemstack, EntityPlayer player, List tooltip, boolean bool) {
-        tooltip.add(EnumChatFormatting.GOLD + "Thingy");
+        tooltip.add(EnumChatFormatting.GREEN + "A green-coloured bacterium. Lethal.");
     }
-
 }
