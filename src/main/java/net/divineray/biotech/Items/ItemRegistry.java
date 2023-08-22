@@ -1,7 +1,8 @@
 package net.divineray.biotech.Items;
 
+import net.divineray.biotech.MainRegistry;
 import net.divineray.biotech.Tags;
-import net.divineray.biotech.mainRegistry;
+import net.minecraft.client.resources.IResourceManager;
 import net.minecraft.item.Item;
 
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -19,10 +20,11 @@ public class ItemRegistry {
 
     public static void initializeItem() {
         itemDummy = new Item().setUnlocalizedName("itemDummy")
-            .setCreativeTab(mainRegistry.testTab);
-        itemGreenBacterium = new Item().setUnlocalizedName("itemGreenBacterium")
-            .setCreativeTab(mainRegistry.testTab)
-            .setTextureName(Tags.MODID + ":greenBacterium");
+            .setCreativeTab(MainRegistry.testTab);
+
+        itemGreenBacterium = new Item().setUnlocalizedName("ItemGreenBacterium")
+            .setCreativeTab(MainRegistry.testTab)
+            .setTextureName(Tags.MODID + ":green_bacterium"); //TODO: FIX THIS
     }
 
     private static void registerItem() {
