@@ -1,4 +1,4 @@
-package net.divineray.biotech.Items;
+package net.divineray.biotech.items;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
 package net.divineray.biotech;
 
-import net.divineray.biotech.Items.ItemRegistry;
 import net.divineray.biotech.creativetabs.TestTab;
+import net.divineray.biotech.items.ItemRegistry;
 import net.minecraft.creativetab.CreativeTabs;
 
 import org.apache.logging.log4j.LogManager;
