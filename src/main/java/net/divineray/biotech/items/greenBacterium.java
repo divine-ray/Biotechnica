@@ -7,9 +7,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumChatFormatting;
 
-public class ItemGreenBacterium extends Item {
+public class greenBacterium extends Item {
 
-    public ItemGreenBacterium() {}
+    public greenBacterium() {}
 
     @Override
     @SuppressWarnings("rawtypes")
