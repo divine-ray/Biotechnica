@@ -22,7 +22,7 @@ public class ItemRegistry {
         itemDummy = new Item().setUnlocalizedName("itemDummy")
             .setCreativeTab(MainRegistry.testTab);
 
-        greenBacterium = new greenBacterium().setUnlocalizedName("green_bacterium")
+        greenBacterium = new Item().setUnlocalizedName("green_bacterium")
             .setCreativeTab(MainRegistry.testTab)
             .setTextureName(Tags.MODID + ":green_bacterium"); // TODO: FIX THIS
     }
